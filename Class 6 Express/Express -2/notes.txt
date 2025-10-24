@@ -1,0 +1,32 @@
+
+create
+-------
+usage: create user/emp/product/order
+API: 127.0.0.1/api/create
+method:POST
+required field:
+access type: Public
+
+read
+-----
+usage: read all user/employees
+API: 127.0.0.1:8080/api/read
+method: GET
+required field: None
+access type: Public
+
+update
+-------
+usage: update user/emp/product/order
+API: 127.0.0.1:8080/api/update
+method: PUT
+required field:
+access type: Public
+
+delete
+-------
+usage: delete user/emp/product/order byid
+api: 127.0.0.1:8080/api/delete
+method: DELETE
+required field;
+access type: Public
