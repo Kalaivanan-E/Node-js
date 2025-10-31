@@ -1,13 +1,14 @@
 import express from 'express'
 import morgan from 'morgan'
+import dotenv from 'dotenv'
 import chalk from 'chalk'
 import empRouter from './routes/empRoutes.js'
 
 const app = express()
 
-let port = 5000
-let host = '127.0.0.1'
-
+dotenv.config({'path':'./config/dev.env'})
+let port = process.env.PORT
+let host = process.env.HOST
 // Middleware
 app.use(morgan('dev'))
 app.use(express.json()) // ✅ REQUIRED to parse JSON body
